@@ -1,7 +1,9 @@
 "use client";
 import Navbar from "@/components/Navbar";
+import ProductCard from "@/components/ProductCard";
 import Signup from "@/components/Signup";
 import { useAuthStore } from "@/store/useAuthStore";
+import { dummyProducts } from "@/utils/constant";
 import { useEffect } from "react";
 import { Toaster } from "react-hot-toast";
 import { BiLoader } from "react-icons/bi";
@@ -33,6 +35,23 @@ export default function Home() {
           <Signup />
         </div>
       )}
+    <div className="mt-16 flex flex-col mx-10">
+      <div className="flex flex-col items-end w-max">
+        <p className="text-2xl font-medium uppercase">All Products</p>
+        <div className="w-16 h-0.5 bg-[#4fbf8b] rounded-full"></div>
+      </div>
+      {dummyProducts.length > 0 ? (
+        <div className="flex flex-wrap gap-6 mt-6">
+          {dummyProducts
+            .filter((product) => product.inStock)
+            .map((product, index) => (
+              <ProductCard key={index} product={product} />
+            ))}
+        </div>
+      ) : (
+        <p className="text-center text-gray-500 mt-16">No Products Found</p>
+      )}
+    </div>
     </div>
   );
 }

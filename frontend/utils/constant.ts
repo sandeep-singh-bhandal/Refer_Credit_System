@@ -1,0 +1,32 @@
+export const dummyProducts = [
+  {
+    _id: "gd46g23h",
+    name: "iPhone 15",
+    price: 999,
+    offerPrice: 899,
+    image: "/iphone.jpg",
+    createdAt: "2025-03-25T07:17:46.018Z",
+    updatedAt: "2025-03-25T07:18:13.103Z",
+    inStock: true,
+  },
+  {
+    _id: "gd47g34h",
+    name: "Samsung S24 Ultra",
+    price: 799,
+    offerPrice: 699,
+    image: "/samsung.webp",
+    createdAt: "2025-03-25T07:17:46.018Z",
+    updatedAt: "2025-03-25T07:18:13.103Z",
+    inStock: true,
+  },
+  {
+    _id: "gd48g45h",
+    name: "Realme",
+    price: 100,
+    offerPrice: 80,
+    image: "realme.png",
+    createdAt: "2025-03-25T07:17:46.018Z",
+    updatedAt: "2025-03-25T07:18:13.103Z",
+    inStock: true,
+  },
+];
