@@ -1,4 +1,3 @@
-import { useAuthStore } from "@/store/useAuthStore";
 import { api } from "@/utils/axios";
 import toast from "react-hot-toast";
 import { BsStarFill } from "react-icons/bs";
