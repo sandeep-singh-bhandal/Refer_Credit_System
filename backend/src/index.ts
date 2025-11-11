@@ -3,6 +3,7 @@ import "dotenv/config";
 import cookieParser from "cookie-parser";
 import env from "./config/env";
 import connectDB from "./config/db";
+import userRouter from "./routes/userRoutes";
 
 const app = express();
 
@@ -13,6 +14,8 @@ app.use(cookieParser());
 // Connecting to Database
 connectDB();
 
+// Api endpoints
+app.use("/api/user", userRouter);
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello from TS + Express!");
