@@ -8,7 +8,7 @@ import userRouter from "./routes/userRoutes";
 import purchaseRouter from "./routes/purchaseRoutes";
 
 const app = express();
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = ["http://localhost:3000","https://refer-credit-system.vercel.app"];
 
 // Middle Configuration
 app.use(express.json());
