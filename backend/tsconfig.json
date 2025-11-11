@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    // File structure
     "rootDir": "./src",
     "outDir": "./dist",
 
