@@ -21,6 +21,7 @@ export default function Home() {
         <div className="flex flex-col items-center gap-4">
           <BiLoader className="size-10 animate-spin" />
           <p className="text-gray-700">Checking Authentication...</p>
+          <p className="text-gray-700">Please wait backend could be on sleep mode (20-30sec max)</p>
         </div>
       </div>
     );
